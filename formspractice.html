@@ -9,7 +9,73 @@
     <a href="index.html" title="Go back to general page.">Go back to general page.</a>
     <hr>
     <br>
+    <pre>Forms are visual objects.
+      Form is bundle of different fields.
+      FORM - is main tag.
+      TEXTAREA - generate big resizable field for input.
+      INPUT - one-side tag for anykind input.
+      NAME (atr.) - unique name of element.
+      ID (atr.) - unique id of element.
+      TYPE (atr.) - type of content:
+        - "text"
+        - "hidden"
+        - "submit"
+        - "password"
+        - "number"
+        - "email"
+        - "checkbox"
+        - "radio"
+        - "color"
+        - "date"
+        - "time"
+        - "file"
+        - "range"
+      VALUE (atr.) - default value of element. For submit type change default button text.
+      PLACEHOLDER (atr.) - in-field tooltip. Hiden if field have default value but will appear as soon as field become empty.
+      LABEL - text message. For example text name for input field.
+      LABEL new attribute:
+      FOR (atr.) - make link between input field and label. Activate input field by clicking on label. Write id of corresponding input element.
+      FOR new attirubte:
+      ACTION (atr.) - indicates the path to the handler file.
+      METHOD - transit data by public or hidden:
+        - "get" - public. User will see it as request in browser address field.
+          For example:
+          .../formpractice.html
+          .../formpractice.html?firstname=Myname&?lastname=Mylastname
+        - "post" - hidden.
 
+    </pre>
+    <form>
+    <!--
+    <form action="form.php" method="post">
+    -->
+      <p>textarea <textarea name="biography""></textarea></p>
+      <p>text <input type="text" name="firstname" Value="Mike" placeholder="Write your name here"></p>
+      <p>hidden <input type="hidden" name="secondname"></p>
+      <p>password <input type="password" name="password" placeholder="Write your password here"></p>
+      <p>number <input type="number" name="age" id="age1"></p>
+      <p>email <input type="email" name="email"></p>
+      <p>checkbox <input type="checkbox" name="checkbox"></p>
+      <p>radio <input type="radio" name="radio"></p>
+      <p>color <input type="color" name="color"></p>
+      <p>date <input type="date" name="date"></p>
+      <p>time <input type="time" name="time"></p>
+      <p>file <input type="file" name="file"></p>
+      <p>submit <input type="submit" name="submitbutton"></p>
+      <p>range <input type="range" name="range"></p>
+      <div>
+        <p>Exercise 1:</p>
+        <p>
+          <label for="logininput1">Login:</label>
+          <input type="text" name="logininput" placeholder="Write your login here" id="logininput1">
+          <br>
+          <label for="passwordinput1">Password:</label>
+          <input type="password" name="passwordinput" placeholder="Write your password here" id="passwordinput1">
+          <br>
+          <input type="submit" value="Autorize">
+        </p>
+      </div>
+    </form>
 
 
     <br>
